@@ -338,7 +338,7 @@ main {
 
 .info-content .name {
   color: var(--white-2);
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   font-weight: var(--fw-500);
   letter-spacing: -0.25px;
   margin-bottom: 10px;
@@ -1881,3 +1881,26 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 }
 
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-3);
+  line-height: 1.6;
+  background: var(--border-gradient-onyx);
+  /* padding: 20px; */
+  /* border-radius: 14px; */
+  box-shadow: var(--shadow-2);
+}
+.item {
+  border: 1px; /* Warna border yang jelas */
+  padding: 10px;
+  text-align: center; /* Menyelaraskan teks ke tengah */
+  flex: 1; /* Membuat item meregang untuk mengisi ruang yang tersedia */
+  box-sizing: border-box; /* Memastikan padding dan border termasuk dalam ukuran elemen */
+}
+.item:not(:last-child) {
+  margin-right: 10px; /* Menambahkan jarak antara item kecuali item terakhir */
+}
