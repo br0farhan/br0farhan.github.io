@@ -1904,3 +1904,20 @@ textarea.form-input::-webkit-resizer { display: none; }
 .item:not(:last-child) {
   margin-right: 10px; /* Menambahkan jarak antara item kecuali item terakhir */
 }
+
+.avatar-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000; /* Mengatur border kotak avatar */
+  border-radius: 50%; /* Membuat kotak menjadi lingkaran */
+  padding: 5px; /* Jarak antara border dan gambar */
+  width: 150px; /* Lebar kotak avatar */
+  height: 150px; /* Tinggi kotak avatar */
+  overflow: hidden; /* Menyembunyikan bagian gambar yang keluar dari kotak */
+}
+.avatar-box img {
+  border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+  width: 150px; /* Lebar gambar */
+  height: 150px; /* Tinggi gambar */
+}
